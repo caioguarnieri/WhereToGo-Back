@@ -1,0 +1,24 @@
+{
+  "name": "wheretogo-back",
+  "version": "1.0.0",
+  "description": "Trip Planner",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caioguarnieri/WhereToGo-Back.git"
+  },
+  "author": "Caio Guarnieri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caioguarnieri/WhereToGo-Back/issues"
+  },
+  "homepage": "https://github.com/caioguarnieri/WhereToGo-Back#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2"
+  }
+}
