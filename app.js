@@ -1,27 +1,18 @@
 import express from "express";
 import routes from "./src/routes.js";
 import dataModel from "./model/dataModel.js";
-const usuario = [
-  {
-    name: "Caio",
-    email: " teste@teste",
-    nacionalidade: " Brazil",
-    active: true,
-  },
-];
+
 
 class app {
   constructor() {
+    
     this.server = express();
+    this.middlewares();  
     this.Routes();
-    dataModel
-      .create(usuario)
-      .then(() => {
-        console.log("criado com sucesso");
-      })
-      .catch((err) => {
-        console.log(`Erro ao criar ${err}`);
-      });
+   
+  }
+  middlewares() {
+    this.server.use(express.json());
   }
   Routes() {
     this.server.use(routes);
