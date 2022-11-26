@@ -24,7 +24,7 @@ class DeleteTravelService {
       await Step.deleteOne(step.id);
     }
 
-    await this.travelsRepository.deleteOne(id);
+    await this.travelsRepository.findByIdAndDelete(id);
   }
 }
 

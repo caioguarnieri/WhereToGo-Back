@@ -17,8 +17,7 @@ class DeleteStepService {
         404
       );
     }
-
-    await this.stepsRepository.deleteOne(id);
+    await this.stepsRepository.findByIdAndDelete(id);
   }
 }
 
